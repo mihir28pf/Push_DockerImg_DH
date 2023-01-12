@@ -33,4 +33,4 @@ jobs:
         run: docker build . --file Dockerfile --tag mihiruchiha/crudrestapi:crudrestimgv1
      -
         name: Push docker image to dockerhub 
-        run: docker push mihiruchiha/crudrestapi:crudrestimgv1
+        run: docker push mihiruchiha/crudrestapi:crudrestimg:v1
