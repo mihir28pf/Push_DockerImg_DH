@@ -33,4 +33,4 @@ jobs:
         run: docker build . --file Dockerfile --tag crudrestapi:v1
      -
         name: Push docker image to dockerhub 
-        run: docker push crud-rest/crudrestapi:v1
+        run: docker push crudrestapi:v1
