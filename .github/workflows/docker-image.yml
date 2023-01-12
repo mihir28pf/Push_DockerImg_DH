@@ -33,4 +33,4 @@ jobs:
         run: docker build . --file Dockerfile --tag crudrestapi:$(date +%s)    
      -
         name: Push docker image to dockerhub 
-        run: docker push ${{secrets.DOCKER_USER}}/crud-rest
+        run: docker push mihiruchiha/crud-rest
