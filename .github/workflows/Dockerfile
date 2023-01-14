@@ -1,8 +1,9 @@
 
-FROM golang:1.18
+FROM golang:latest
 RUN apt-get update
 RUN git clone https://github.com/mihir28pf/CRUD_REST_api.git
 WORKDIR CRUD_REST_api/
-RUN go build -o build
+RUN go get
+RUN go build -o main
 EXPOSE 8080
-CMD ["./build"]
+CMD [ "go", "run", "main.go" ]
